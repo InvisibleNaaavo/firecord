@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "name": "firecord",
+  "description": "a discord client for firefox os, by firefox os lovers (just one rn)",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/ico/unreadableaffire.png",
+    "48": "/ico/48fire.png",
+    "60": "/ico/60fire.png",
+    "128": "/ico/128fire.png"
+  },
+  "developer": {
+    "name": "mack"
+  },
+  "type": "privileged",
+  "permissions": {
+    "browser": {},
+    "systemXHR": {},
+    "network-http": {},
+    "network-tcp": {},
+    "indexedDB": {},
+    "storage": {}
+  },
+  "content_security_policy": {
+    "script-src": "self 'unsafe-inline' 'unsafe-eval' https://discord.com",
+    "object-src": "self",
+    "style-src": "self 'unsafe-inline'"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en"
+}
